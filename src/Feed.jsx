@@ -3,10 +3,10 @@ import BASE_URL from "./utils/constants";
 import { addFeed } from "./utils/feedSlice";
 import { useEffect } from "react";
 import axios from "axios";
-import UserCard from "./userCard";
+import UserCard from "./UserCard";
 
 const Feed=()=>{
-   const feed=useSelector((store)=>store.feed);
+const feed=useSelector((store)=>store.feed);
    const dispatch=useDispatch();
    const userFeed=async()=>{
       if(feed) return ;
